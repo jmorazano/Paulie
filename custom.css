@@ -1,0 +1,1022 @@
+/* 
+WOO CUSTOM STYLESHEET
+---------------------
+
+Instructions:
+
+Add your custom styles in this file instead of style.css so it 
+is easier to update the theme. Simply copy an existing style 
+from style.css to this file, and modify it to your liking. */
+
+/*********************************************
+	-	SETTINGS FOR BANNER CONTAINERS	-
+**********************************************/
+
+.tp-banner-container{
+	width:100%;
+	position:relative;
+	padding:0;
+    max-width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tp-banner{
+	width:100%;
+	position:relative;
+}
+
+.tp-banner-fullscreen-container {
+		width:100%;
+		position:relative;
+		padding:0;
+}
+
+.tparrows {	
+	background:#000;
+	background:rgba(0,0,0,0);
+}
+
+.tparrows:hover {	
+	background:rgba(0,0,0,0.1);
+}
+.tparrows:before {
+	font-size: 18px;
+	color:#fff;
+	display:block;
+	font-weight: bold;
+}
+
+/* 
+GLOBAL STYLES
+----------------
+Add styles beneath this line that you want to be applied across your entire site */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000000;
+  margin: 0 0 .05em;
+
+}
+
+#footer-widgets .widget h3 a
+{
+	color: black !important;
+}
+
+.post img.thumbnail,
+.type-page img.thumbnail {
+  padding: 0;
+  border-bottom: 0.327em none white !important;
+	margin-bottom: 10px;
+}
+
+ul.products li.product img {
+	border-style: none;
+}
+
+.products h3{
+	font-size: 1em !important;
+}
+
+.products h3{
+  color: #9c9c9c !important;
+}
+
+.products h3 a:link,
+.products h3 a:visited{
+  color: #9c9c9c !important;
+}
+
+.products h3:hover,
+.products h3:active{
+  color: #000 !important;
+}
+
+.products h4 a{
+  color: #000 !important;
+	line-height: 1.3em;
+}
+
+.products .price{
+  color: #9c9c9c !important;
+}
+
+.single-product .summary h2 a{
+  color: #000000 !important;
+}
+
+.single-product .summary h1{
+	font-size: 1.4em !important;
+  color: #9c9c9c !important;
+}
+
+.single-product p.price{
+	font-size: 1.2em !important;
+}
+
+#tab-description h2 {
+	font-size: 1.1em;
+}
+
+.related ul.products {
+	margin-bottom: 0;
+}
+
+.related h2,
+.upsells h2 {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1.1em;
+}
+
+.related ul.products li.product {
+  width: 22%;
+  margin-right: 3.8%;
+  margin-bottom: 1em;
+}
+
+.images img {
+  padding: 0;
+  background: #fff;
+  border: 0px solid #e8e4e3;
+  width: 100%;
+}
+
+
+table {
+
+  margin-bottom: 1em;
+}
+
+
+table th,
+table td {
+  	border-bottom: 1px solid #e8e4e3;
+	padding-top: 0.6em;
+	padding-bottom: 0.6em;
+}
+
+.woocommerce-tabs ul.tabs{
+	display: table; /* Some CSS magic to make the menu... */
+    width: 100%;    /* ...stretch to full width. */
+    table-layout: fixed; /* Making menu items equal width */
+}
+
+.woocommerce-tabs ul.tabs li{
+	display: table-cell; /* This comes together with ul{display:table} */
+    text-align: center;   
+}
+
+.woocommerce-tabs ul.tabs li a{
+  display: block;
+  font-weight: normal;
+  border: 1px solid #e8e4e3;
+	text-transform: uppercase;
+	font-style: normal;
+	font-size: 1em;
+}
+
+.woocommerce-tabs ul.tabs li a:hover{
+  color: #9c9c9c !important; 
+}
+
+
+#fbanner {
+	margin-bottom: 35px;
+}
+
+#fbanner .col-1 ,
+#fbanner .col-2 
+ {
+	margin-bottom: 15px;
+}
+
+#hcontent 
+ {
+	padding-bottom: 1em;
+}
+
+#hcontent 
+ {
+	font-size: 1.1em;
+}
+
+#hcontent p 
+ {
+	margin-bottom: 0.6em;
+	margin-top: 0;
+}
+
+#hcontent h1 
+ {
+	margin-bottom: 0.6em;
+	margin-top: 0;
+	font-size: 1.3em;
+}
+
+.onsale {
+  background: #b85f56;
+  color: #fff;
+}
+
+.single-product .summary .price ins {
+	font-family: 'GillSansMTPro-Medium';
+	font-weight: bold !important;
+	color: #b85f56;
+	font-size: 1.2em !important;
+}
+
+
+.single-product button.button.alt {
+	padding: .4em 5em;
+}
+
+#benefits {
+	background-color: #eee;
+	color: black;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-family: 'Libre Baskerville', serif;
+	font-style: normal;
+}
+
+#benefits a{
+	color: black !important;
+}
+
+table.cart td.actions .coupon label {
+	display: block;
+}
+
+#coupontog.open {
+	opacity: 1;
+}
+
+#coupontog {
+	opacity: 0;
+	transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+#couponlabel.open {
+	display: none;
+}
+
+#top ul.nav > li a .amount {
+	font-weight: bold;
+}
+
+ul.homeproducts li.product,
+#fbanner img,
+#outfits .products li,
+ul.products li.product-category {
+	transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+ul.homeproducts li.product:hover,
+#fbanner img:hover,
+#outfits .products li:hover,
+ul.products li.product-category:hover {
+	opacity:0.5;
+}
+
+@media only screen and (min-width: 768px) {
+
+#fbanner .col2-set .col-1 {
+    width: 50%;
+	margin-bottom: 0;
+}
+
+#fbanner .col2-set .col-1 .inner {
+	padding-right: 5px;
+}
+
+#fbanner .col2-set .col-2 {
+    width: 50%;
+	margin-bottom: 0;
+}
+
+#fbanner .col2-set .col-2 .inner{
+	padding-left: 5px;
+}
+
+}
+#hbanner {
+	margin-bottom: 35px;
+}
+
+#footer-widgets {
+  border-top: 1px none #e8e4e3;
+  padding: 1em 0;
+}
+
+.upsells {
+	clear: both;
+}
+
+address {
+	font-weight: normal;
+	font-style: normal;
+}
+
+a.tourlink {
+	float: left;
+}
+
+a.maplink {
+	float: right;
+}
+
+.stock {
+	display: none;
+}
+
+ul.products .count { display:none !important; }
+
+.archive.term-designers .product h3{
+	display: none;
+}
+
+#payment{
+	position: relative;
+}
+
+#payment .payment_methods{
+	font-weight: normal;
+	font-style: normal;
+	float: left;
+	width: 60%;
+	margin-bottom: 0!important;
+}
+
+#payment .payment_icons{
+	font-weight: normal;
+	font-style: normal;
+	float: right;
+	width: 39%;
+	margin-bottom: 0!important;
+}
+
+@media only screen and (max-width: 767px) {
+
+	#navigation,
+	#mobileMenu_top-nav {
+		display: none !important;
+	}
+	
+	#payment .payment_methods{
+		width: 100%;
+		clear: both;
+	}
+	
+	#payment .payment_icons{
+		width: 100%;
+		clear: both;
+	}
+	
+	.col2-set .col-2 {
+	    width: 100%;
+	    float: none;
+	}
+	
+	.products .product:nth-child(odd) {
+		clear: both;
+	}
+
+	.products .product:nth-child(even) {
+		margin-right: 0;
+	}
+  
+
+}
+
+.payment-methods-outline span{
+	padding: 4px;
+	font-size: 1.5em !important;
+	line-height: 1;
+	background: transparent;
+	border: 1px solid silver;
+	border-radius: 4px;
+	margin-bottom: 4px;
+}
+
+
+#payment .payment_methods .payment_method{
+
+	margin-bottom: 0!important;
+}
+
+.checkout #order_review #payment ul li .payment_box table{
+	margin-bottom: 0!important;
+	width: 100% !important;
+}
+
+#ppayment .place-order{
+	float: left;
+	width: 35%!important;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+#order_review .shop_table th{
+	color: black;
+}
+  #header #navigation ul.nav ul {
+	border-top-style: none;
+	margin-top: 0;
+}
+
+#header #navigation ul#main-nav li a {
+	padding-left: 1.3em;
+	padding-right: 1.3em;
+	font-size: 0.9em;
+}
+
+#header #navigation ul#main-nav ul li a {
+
+	font-size: 1em;
+}
+/* NEWSLETTER WIDGET */
+
+.gform_wrapper
+{
+	margin: 0 0 10px !important;
+	
+	}
+
+#footer-widgets.col-4 .gform_body label{
+	display: none;
+}
+
+#footer-widgets.col-4 .gform_body input{
+	width: 100% !important;
+}
+
+#footer-widgets.col-4 .ginput_container {
+  margin-bottom: 0;
+}
+
+#footer-widgets.col-4 .gform_wrapper .gform_footer.right_label,
+#footer-widgets.col-4 .gform_wrapper .gform_footer.left_label {
+	padding: 0 !important;
+}
+
+#footer-widgets.col-4 .gform_wrapper .gform_footer {
+	padding: 0 !important;
+	margin: 10px 0 0 !important;
+}
+
+#footer-widgets.col-4 #subscribeform input[type=text]
+{
+	width: 70%;
+}
+
+
+
+#socials{
+	height: 34px;
+	background: url(media/socials.png) no-repeat center center;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.addthis_toolbox a{
+	line-height: 24px;
+	margin-right: 0px;
+}
+
+article header{
+	margin-bottom: 10px;
+}
+
+section.entry ul{
+	margin-left: 1em;
+}
+
+#footer-widgets .menu-item-3253{
+	display: none;
+}
+
+#footer-widgets .widget h3{
+	color: black;
+}
+
+.addthis_toolbox .fa{
+	line-height: 18px;
+	font-size: 18px;
+	color: black;
+}
+
+.addthis_toolbox a{
+	margin-right: 5px;
+}
+
+#socials a{
+	color: black !important;
+	display: inline-block;
+}
+
+#socials a:link,
+#socials a:visited{
+	color: black !important;
+}
+
+#socials a:hover,
+#socials a:active{
+	color: #9c9c9c !important;
+}
+
+#socials span img{
+}
+
+.brand_name {
+	
+}
+
+.colourSwatch {
+	line-height: 16px;
+	margin-bottom: 0em;
+}
+
+table.variations{
+	margin-bottom: 0;
+}
+
+button.single_add_to_cart_button{
+	margin: 10px 0 0;
+}
+
+.colourSwatch a.swatch {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	text-indent: -999em;
+	border-radius: 50%;
+}
+
+h1.product_title {
+	font-size: 1.8em;
+}
+
+.single-product .summary h2 {
+	margin-bottom: 0;
+	font-size: 1.4em;
+}
+
+.single-product .summary .price:first-child {
+	font-size: 1.4em;
+	color: black;
+	font-weight: bold !important;
+}
+
+.colourSwatch label{
+	min-width: 150px;
+	display: inline-block;
+}
+
+table.variations{
+	width: auto;
+}
+
+table.variations td{
+	border-style: none;
+}
+
+.variations td.label{
+	min-width: 160px;
+	padding-right: 0!important;
+}
+
+
+table.variations td.value{
+	padding-left: 0!important;
+}
+
+table.variations td.value select{
+	min-width:100px;
+}
+
+.shop_table thead th{
+	color: black;
+}
+
+.shop_table dl.variation{
+	margin-bottom: 0;
+}
+
+.shop_table dl.variation dt,
+.shop_table dl.variation dd{
+	margin-bottom: 0;
+	font-weight: normal;
+	font-style: normal;
+	color: #9c9c9c;
+}
+
+
+.shop_table .cart-subtotal td:first-child,
+.shop_table .shipping td:first-child,
+.shop_table .order-total{
+	font-weight: normal;
+	text-transform: none;
+	font-style: normal;
+}
+
+
+
+a.remove {
+  font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+.woocommerce_message,
+.woocommerce_info,
+.woocommerce_error,
+.woocommerce-message,
+.woocommerce-info,
+.woocommerce-error {
+  padding: .618em 1em .618em 0;
+  margin-bottom: 0em;
+  background: #fff;
+  border: 0px solid #4d65a4;
+  border-left-width: 0 ;
+  position: relative;
+  font-weight: normal;
+	font-style: normal;
+}
+
+.woocommerce_message:before,
+.woocommerce_info:before,
+.woocommerce_error:before,
+.woocommerce-message:before,
+.woocommerce-info:before,
+.woocommerce-error:before {
+  content: " ";
+}
+
+.checkout #order_review .form-row.place-order .padlock {
+	padding-left: 40px;
+	background: url(media/padlock.png) no-repeat left center;
+	display: block;
+	line-height: 1.2em;
+}
+
+.checkout #order_review .form-row.place-order .form-row.terms {
+  float: left;
+}
+
+.checkout #order_review #payment ul li label {
+  font-weight: normal;
+
+}
+
+.checkout #order_review table table  {
+	border-style: none;
+}
+
+.checkout td.product-name table td  {
+	border-style: none;
+}
+
+.checkout td.product-image  {
+	width: 50px;
+}
+
+.checkout .attachment-shop_thumbnail  {
+	width: 50px;
+}
+
+.payment_method_sagepaydirect label {
+}
+
+.payment_method_paypal img {
+	display: none;
+}
+
+.payment_method_sagepaydirect input#payment_method_sagepaydirect{
+}
+
+.shop_table .order-total .amount,
+.cart_totals .order-total .amount{
+	color: black;
+	font-weight: bold;
+}
+
+.payment_method_sagepaydirect img{
+	display: none;
+}
+
+.shop_table .order-total .includes_tax .amount,
+.cart_totals .order-total .includes_tax .amount{
+	color: #9c9c9c;
+}
+
+.coupon input.button,
+.checkout_coupon input.button,
+.shop_table input.updatecart-button,
+table.cart td.actions .button{
+	border-style: solid;
+	border-color: #f3f2f1;
+	background-color: #f3f2f1 !important;
+	color: #9c9c9c !important;
+}
+
+.coupon input.button:hover,
+.checkout_coupon input.button:hover,
+.shop_table input.updatecart-button:hover,
+table.cart td.actions .button:hover{
+	border-style: solid;
+	border-color: #dfdfdf;
+	background-color: #dfdfdf !important;
+	background-image: none;
+}
+
+.checkout #order_review #payment ul {
+  border-bottom: 1px none #e8e4e3;
+}
+
+.shipping_calculator h2 {
+	font-size: 1em;
+	margin-bottom: 7px;
+}
+
+.shipping_calculator h2 a {
+	background: url(media/arrow_right-grey.png) no-repeat right center;
+	padding-right: 16px;
+	line-height: 12px;
+}
+
+table.cart td.actions {
+  border-bottom: 1px none #e8e4e3;
+}
+
+a.showcoupon {
+	text-decoration: underline;
+}
+
+.form-row.terms a {
+	text-decoration: underline;
+}
+
+div.quantity .qty {
+  margin: 0;
+}
+
+/* 
+EMBED */
+
+.embed-container { 
+		position: relative; 
+		padding-bottom: 56.25%;
+		height: 0;
+		overflow: hidden;
+		max-width: 100%;
+		height: auto;
+	} 
+
+	.embed-container iframe,
+	.embed-container object,
+	.embed-container embed { 
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+/** Product Carousel **/
+
+.prodcaro {
+    position: relative;
+    width: 100%;
+}
+
+
+.prodcaro img {
+    display: block;
+    max-width: 100%;
+    height: auto !important;
+}
+
+
+.prodcaro > div.item {
+	margin-bottom: 10px;
+	width: 74px;
+    float: left;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+ul.products li.product a
+{
+	position: relative;
+	width: 100%;
+	display: block;
+}
+
+
+h5.prodLabel {
+	text-align: center;
+	display: inline-block;
+	background-color: white;
+	color: black;
+	font-weight: normal;
+	font-style: normal;
+	border: 1px solid #898a89;
+	padding: 2px 5px;
+	line-height: 1em;
+	font-size: 0.8em;
+}
+
+h5.prodLabel.alt {
+	border: 1px solid #b85f56;
+	color: #b85f56;
+}
+
+
+body div.festi-cart-pop-up-products-content  p.festi-cart-buttons a.festi-cart-view-cart
+{
+        
+     background-color: #f3f2f0 !important;
+     color: #000000 !important;
+     padding: 5px 10px !important;
+}
+
+body div.festi-cart-pop-up-products-content  p.festi-cart-buttons a.festi-cart-checkout
+
+{
+     background-color: black !important;
+     color: #ffffff !important;
+     padding: 5px 10px !important;
+}
+			
+		a.about_paypal {
+display: none;
+}
+
+div.festi-cart-total
+{
+    margin-top: 5px;
+    padding:5px;
+    background:#EEEEEE;
+    color:#000; 
+    font-weight: bold;
+    text-align:right;
+    text-transform: none;
+	float: right;
+}
+
+.festi-cart-buttons
+{
+
+	float: left;
+	text-align: left !important;
+	padding-top: 10px;
+}
+
+.festi-cart-pop-up-footer
+{
+	clear: both;
+}
+div.festi-cart-pop-up-footer span.festi-cart-continue.b-close span.festi-cart-continue-shopping
+{
+     padding-top: 0px !important;
+     padding-bottom: 0px !important;
+}
+	.wc-nav li.search input[type="search"]{
+	line-height: 22px;
+}
+
+
+ 
+#outfits{
+	text-align: center;
+	margin-bottom: 4em;
+	clear: both;
+}
+
+#outfits h2{
+	text-align: center;
+	margin-bottom: 0em;
+	background: url(media/socials.png) no-repeat center center;
+	font-family: 'Libre Baskerville', serif;
+	font-style: italic;
+}
+
+#outfits h3{
+	color: #9c9c9c !important;
+	padding-top: 1em;
+}
+
+#outfits h6.rfeat {
+	color: #cc0000 !important;
+	padding-top: 0em;
+	text-transform: uppercase;
+	margin-bottom: 1em;
+	font: 22px 'Libre Baskerville', serif;
+}
+
+#outfits h2 span{
+	background-color: white;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+#outfits ul.products{
+	text-align: center;
+}
+
+#outfits ul.products li.product {
+	width: 15%;
+	margin-bottom: 0 !important;
+	margin-left: 2%;
+	margin-right: 2%;
+	float: none;
+	display: inline-block;
+	text-align: center;
+}
+
+
+#outfits ul.products li.product:last-child {
+	width: 15% !important;
+	margin-left: 2% !important;
+	margin-right: 2% !important;
+	margin-right: 0 !important;
+}
+
+#menu:not(.mm-menu) {
+   display: none;
+}
+
+#gform_1 li#field_1_2 label {
+   display: none;
+}
+
+
+/* 
+DESKTOP STYLES
+-----------------
+Add styles inside the media query below that you only want to be applied to the desktop layout of your site */
+
+@media only screen and (min-width: 768px) {
+
+
+.header a
+{
+	background: center center no-repeat transparent;
+	display: block;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 0;
+	left: 10px;
+}
+		
+	#wrapper {
+		/* width: 920px;*/
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#top-nav a {
+		text-transform: uppercase;
+	}
+	
+	#cat-description{
+		padding-bottom: 30px;
+	}
+	
+	#cat-description .term-image {
+		float: left;
+		width: 50%;
+	}
+	
+	#cat-description .term-image img {
+		float: right;
+		margin-left: 50px;
+	}
+	
+	#cat-description .term-text h1{
+		line-height: 1em;
+		margin-bottom: 0.6em;
+	}
+	
+	#cat-description .term-text p{
+		margin-bottom: 0;
+	}
+	
+	#cat-description .term-text{
+		width: 50%;
+		float: left;
+	}
+
+}
