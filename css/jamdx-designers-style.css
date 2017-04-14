@@ -1,0 +1,81 @@
+.term-text .page-title {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 20px;
+    margin-bottom: 0px !important;
+    margin-top: 20px;
+}
+
+.designers-wrapper {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 0 30px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.designer-by-letter {
+	width: 20%;
+}
+
+.designer-by-letter h2 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 48px;
+	display: inline-block;
+	padding: 0 25px;
+	border-bottom: 3px double;
+	margin-left: 12px;
+}
+
+ul.designers-list {
+    list-style-type: none;
+}
+
+li.designers-list__item a {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	letter-spacing: 1px;
+	color: #333 !important;
+	line-height: 1.8;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
+
+	.designer-by-letter {
+		width: 33%;
+		max-width: 250px;
+		text-align: center;
+	}
+
+}
+
+@media only screen and (max-width: 767px) {
+
+	.designer-by-letter {
+		width: 100%;
+		max-width: 250px;
+		text-align: center;
+	}
+
+	.designers-wrapper {
+	    justify-content: center;
+	}
+
+	ul.designers-list {
+	    list-style-type: none;
+	}
+
+	.designer-by-letter h2 {
+		margin-left: 0;
+	}
+
+	li.designers-list__item {
+	    max-width: 150px;
+	    margin: auto;
+	}
+
+}
+

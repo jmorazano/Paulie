@@ -40,4 +40,5 @@ window.onload = function() {
 	mobileSearchBtn.onclick = function(){
 	    document.body.classList.toggle("mobile-search-open");
 	}
+
 };

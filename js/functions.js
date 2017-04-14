@@ -8,37 +8,6 @@ jQuery(document).ready(function($) {
 		paginationSpeed : 400,
 		singleItem:true
 	});
-
-	$("nav#menu").mmenu({
-		extensions	: [ 'effect-slide-menu', 'pageshadow' ],
-		searchfield	: false,
-		counters	: true,
-		navbar 		: {
-			title		: 'Paulie'
-		},
-		navbars		: [
-			{
-				 position: "bottom",
-				 content: [
-					"<a href='https://www.facebook.com/paulieclothing'><i class='fa fa-facebook fa-fw'></i></a>",
-					"<a href='https://twitter.com/paulieclothing/'><i class='fa fa-twitter fa-fw'></i></a>",
-					"<a href='#'><i class='fa fa-google-plus fa-fw'></i></a>",
-					"<a href='http://paulieclothing.tumblr.com/'><i class='fa fa-tumblr fa-fw'></i></a>",
-					"<a href='http://www.pinterest.com/paulieclothing/'><i class='fa fa-pinterest fa-fw'></i></a>",
-					"<a href='http://instagram.com/paulieclothing/'><i class='fa fa-instagram fa-fw'></i></a>"
-
-				 ]
-            },
-             {
-				position	: 'top',
-				content		: [
-					'prev',
-					'title',
-					'close'
-				]
-			}
-		]
-	});
 	
 	$( "#pa_size option" ).first().remove();
 	$( "#pa_colours option" ).first().remove();

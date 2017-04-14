@@ -58,52 +58,6 @@ document.readyState != "complete" ? (window.attachEvent ? window.attachEvent('on
 </script>
 <!-- <script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: 'a79a96f5-7527-4381-a065-f4cda09e85bc', f: true }); done = true; } }; })();</script> -->
 
-<script type="text/javascript">
-	window.onload = function() {
-		
-		var burgerMenuBtn = document.querySelector('[data-js=burgerMenuBtn]');
-		var mobileSearchBtn = document.querySelector('[data-js=mobileSearchBtn]');
-		var mobileMenuWrapper = document.getElementById('menu-jamdx');
-		var acc = document.querySelectorAll("#menu-jamdx .menu-item-has-children");
-		var i;		        
-
-		// Add mobile menu arrows and accordion functionality
-		for (i = 0; i < acc.length; i++) {
-		    arrowButton = document.createElement('i');
-		    arrowButton.classList = 'mobile-submenu fa';
-
-		    acc[i].appendChild(arrowButton);
-
-		    acc[i].lastChild.onclick = function(){
-		        /* Toggle between adding and removing the "active" class,
-		        to highlight the button that controls the panel */
-		        this.classList.toggle("mobile-submenu--closed");
-		        this.parentElement.classList.toggle("submenu-list-open");
-		        
-		        /* Toggle between hiding and showing the active panel */
-		        var panel = this.previousElementSibling;
-		        if (panel.style.maxHeight){
-		          panel.style.maxHeight = null;
-		        } else {
-		          panel.style.maxHeight = panel.scrollHeight + "px";
-		        } 
-		    }
-		}
-
-		// Mobile menu display
-		burgerMenuBtn.onclick = function(){
-			this.classList.toggle('close-menu-btn');
-		    document.body.classList.toggle("mobile-menu-open");
-
-		}
-
-		//  Mobile search display
-		mobileSearchBtn.onclick = function(){
-		    document.body.classList.toggle("mobile-search-open");
-		}
-	};
-</script>
-
 
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <?php wp_footer(); ?>
