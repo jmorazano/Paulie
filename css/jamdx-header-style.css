@@ -253,6 +253,7 @@
         display: inline-block;
         padding: 0 30px;
         vertical-align: top;
+        box-sizing: border-box;
     }
 
     @media only screen and (max-width: 767px) {
