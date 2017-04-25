@@ -717,9 +717,9 @@ body{
     margin-right: 2%;
   }
 
-ul.products li.product:nth-child(2n) {
+/*ul.products li.product:nth-child(2n) {
     margin-right: 3.8%;
-  }
+  }*/
 
 .upsells ul.products li.product:nth-child(2n) {
     margin-right: 2%;
@@ -733,9 +733,9 @@ ul.products li.product:nth-child(2n) {
     clear: both;
   }
 
-  ul.products li.product.last {
+/*  ul.products li.product.last {
     margin-right: 0;
-  }
+  }*/
   /* 7.2.1 Single Product */
   .single-product .images {
     width: 48%;

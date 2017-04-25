@@ -11,7 +11,11 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
+$custom_css_url = get_template_directory_uri() . '/css/jamdx-archive-product.css';
+
 get_header( 'shop' ); ?>
+
+<link rel="stylesheet" type="text/css" href="<?php echo $custom_css_url ?>">
 
 	<?php
 		/**
@@ -22,7 +26,6 @@ get_header( 'shop' ); ?>
 		 */
 		do_action( 'woocommerce_before_main_content' );
 	?>
-
 		<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
 		<?php
 		
@@ -51,10 +54,18 @@ get_header( 'shop' ); ?>
 		
 		
 		
-		<div id="cat-description" class="fix">
+		<div id="cat-description" class="fix mobile-fit">
 			<div class="term-text">
-				<h1 class="page-title"><?php woocommerce_page_title(); ?></h1>
-				<?php do_action( 'woocommerce_archive_description' ); ?>
+				<h1 class="page-title"><?php woocommerce_page_title(); ?>
+				</h1>
+			</div>
+			<div class="filters-wrapper">
+				<h2 class="filter-title">FILTERS<span class="filter-expand" data-js="filterExpandBtn"></span></h2>
+				<div class="filters-widget filters-widget--hidden">
+				<?php echo do_shortcode('[widget id="wcapf-active-filters-2"]'); ?>
+				<?php echo do_shortcode('[widget id="wcapf-attribute-filter-2"]'); ?>
+				<?php echo do_shortcode('[widget id="wcapf-attribute-filter-3"]'); ?>
+				</div>
 			</div>
 			<?php
 			$queried_object = get_queried_object(); 
@@ -134,3 +145,17 @@ get_header( 'shop' ); ?>
 	?>
 
 <?php get_footer( 'shop' ); ?>
+
+<script type="text/javascript">
+(function() {
+
+	jQuery(document).ready(function () {
+	    jQuery(document).on('click', '.filter-expand', function () {
+	        jQuery('#cat-description').toggleClass('mobile-fit');
+	        jQuery(this).toggleClass('filter-expand--rotated');
+	        jQuery('.filters-widget').toggleClass('filters-widget--hidden');
+
+	    });
+	}); 
+})()
+</script>

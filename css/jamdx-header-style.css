@@ -380,8 +380,3 @@
     /*  fixes after introducing new header and footer
     */
     body p, h1, h2, h3,h4,h5, .blog #sidebar a, .woocommerce_tabs ul.tabs li.active a, .woocommerce-tabs ul.tabs li a, .woocommerce-tabs ul.tabs li.active a {font-family: GillSansMTPro-Book, Arial, Helvetica, Geneva, sans-serif; }
-
-
-    ul.products li.product h3 {
-        margin-top: 0 !important;
-    }
