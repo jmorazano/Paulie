@@ -1920,7 +1920,6 @@ dl.variation dd ul {
 	font-style: normal;
 }
 ul.products {
-  margin-left: 0 !important;
   list-style: none;
 }
 ul.products:after {
@@ -1952,9 +1951,7 @@ ul.products li.product h3 {
 ul.products li.product h4 {
   margin-bottom: 0!important;
 }
-ul.products li.product a:hover h3 {
-  color: #9c9c9c;
-}
+
 ul.products li.product .price {
   display: block;
   color: #000;
@@ -1974,9 +1971,9 @@ ul.products li.product img {
   background: #fff;
   margin: 0 auto;
 }
-ul.products li.product:nth-child(4n) {
+/*ul.products li.product:nth-child(4n) {
   margin-right: 0;
-}
+}*/
 ul.products .star-rating {
   margin: .5em auto;
 }

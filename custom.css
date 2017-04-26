@@ -63,15 +63,14 @@ h6 {
 
 }
 
-#footer-widgets .widget h3 a
-{
+#footer-widgets .widget h3 a {
 	color: black !important;
 }
 
 .post img.thumbnail,
 .type-page img.thumbnail {
-  padding: 0;
-  border-bottom: 0.327em none white !important;
+	padding: 0;
+	border-bottom: 0.327em none white !important;
 	margin-bottom: 10px;
 }
 
@@ -79,31 +78,9 @@ ul.products li.product img {
 	border-style: none;
 }
 
-.products h3{
-	font-size: 1em !important;
-}
-
-.products h3{
-  color: #9c9c9c !important;
-}
-
-.products h3 a:link,
-.products h3 a:visited{
-  color: #9c9c9c !important;
-}
-
-.products h3:hover,
-.products h3:active{
-  color: #000 !important;
-}
-
-.products h4 a{
-  color: #000 !important;
-	line-height: 1.3em;
-}
-
-.products .price{
-  color: #9c9c9c !important;
+.products h4 a {
+	color: #000 !important;
+ 	line-height: 1.3em;
 }
 
 .single-product .summary h2 a{
@@ -366,16 +343,6 @@ ul.products .count { display:none !important; }
 	    width: 100%;
 	    float: none;
 	}
-	
-	.products .product:nth-child(odd) {
-		clear: both;
-	}
-
-	.products .product:nth-child(even) {
-		margin-right: 0;
-	}
-  
-
 }
 
 .payment-methods-outline span{
