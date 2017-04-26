@@ -77,9 +77,6 @@ get_header( 'shop' ); ?>
 			//echo $catimage;
 			//echo "<img src=\"$catimage\" alt=\"\" />";
 			?>
-			
-			<div class="term-image"><img src="<?php the_field('new_category_image',$taxonomy . '_' . $term_id); ?>" /></div>
-			<!--div class="term-image"><img src="<?php the_field('testy',$taxonomy . '_' . $term_id); ?>" /></div-->
 		
 		</div>
 
